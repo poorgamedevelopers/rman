@@ -1,6 +1,6 @@
 // compile-time configuration.
 #pragma once
 
-// undefine only one of these.
-//#define E_CLIENT
-//#define E_SERVER
+// make sure only one of these are set.
+#define E_CLIENT		0
+#define E_SERVER		1

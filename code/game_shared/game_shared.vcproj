@@ -144,6 +144,22 @@
 	</References>
 	<Files>
 		<File
+			RelativePath=".\g_character.cpp"
+			>
+		</File>
+		<File
+			RelativePath=".\g_character.h"
+			>
+		</File>
+		<File
+			RelativePath=".\g_game.cpp"
+			>
+		</File>
+		<File
+			RelativePath=".\g_game.h"
+			>
+		</File>
+		<File
 			RelativePath=".\game_shared_common.cpp"
 			>
 			<FileConfiguration

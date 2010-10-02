@@ -61,6 +61,8 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
+				AdditionalDependencies="libzmq.lib"
+				AdditionalLibraryDirectories="..\..\lib\zeromq\debug\"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -122,6 +124,8 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
+				AdditionalDependencies="libzmq.lib"
+				AdditionalLibraryDirectories="..\..\lib\zeromq\release\"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -143,10 +147,6 @@
 	<References>
 	</References>
 	<Files>
-		<Filter
-			Name="networking"
-			>
-		</Filter>
 		<File
 			RelativePath=".\e_config.h"
 			>
@@ -157,6 +157,14 @@
 		</File>
 		<File
 			RelativePath=".\e_host.h"
+			>
+		</File>
+		<File
+			RelativePath=".\e_hostserver.cpp"
+			>
+		</File>
+		<File
+			RelativePath=".\e_hostserver.h"
 			>
 		</File>
 		<File
@@ -181,6 +189,18 @@
 		</File>
 		<File
 			RelativePath=".\engine_common.h"
+			>
+		</File>
+		<File
+			RelativePath=".\i_game.h"
+			>
+		</File>
+		<File
+			RelativePath=".\i_gameobject.cpp"
+			>
+		</File>
+		<File
+			RelativePath=".\i_gameobject.h"
 			>
 		</File>
 	</Files>
