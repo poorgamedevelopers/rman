@@ -1,8 +1,11 @@
 #include <iostream>
 
+#include "../engine/Renderer.h"
 #include "../engine/engine_common.h"
 #include "../engine/e_host.h"
 
+#define GAME_SCREEN_WIDTH		113
+#define GAME_SCREEN_HEIGHT		50
 
 //////////////////////////////////////////////////////////////////////////
 // ZeroMQ Test
@@ -87,6 +90,9 @@ int main()
 	// create the host subsystem.
 	B_NEW( "client", EHost );
 
+	// initialize the renderer.
+	GrInit( "ZOMG!", GAME_SCREEN_WIDTH, GAME_SCREEN_HEIGHT );
+
 	// main loop.
 	bool done = false;
 	while ( !done )
@@ -98,6 +104,9 @@ int main()
 		if ( !gHost->Update( dt ) )
 			done = true;
 	}
+
+	// shutdown the renderer.
+	GrShutdown();
 
 	// delete the host subsystem.
 	B_DEL( "client", gHost );
