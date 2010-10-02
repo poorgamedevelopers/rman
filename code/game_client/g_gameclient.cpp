@@ -2,7 +2,7 @@
 #include "g_gameclient.h"
 
 //------------------------------------------------------------------
-IGame*	CL_CreateGame()
+CLIENT_API IGame*	G_CreateGame()
 {
 	return B_NEW( "gameclient", GGameClient );
 }

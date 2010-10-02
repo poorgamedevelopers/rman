@@ -15,4 +15,5 @@ public:
 
 private:
 	IGame*		_game;
+	void*		_dll;
 };

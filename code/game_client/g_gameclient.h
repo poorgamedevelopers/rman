@@ -9,5 +9,5 @@ public:
 	virtual IGameObject*	GetPlayer( uint idx ) { return 0; }
 };
 
-extern IGame*	CL_CreateGame();
+CLIENT_API IGame*	G_CreateGame();
 

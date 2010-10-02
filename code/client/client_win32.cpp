@@ -3,6 +3,7 @@
 #include "../engine/Renderer.h"
 #include "../engine/engine_common.h"
 #include "../engine/e_host.h"
+#include "../engine/e_system.h"
 
 #define GAME_SCREEN_WIDTH		113
 #define GAME_SCREEN_HEIGHT		50
@@ -89,6 +90,9 @@ int main()
 {
 	// create the host subsystem.
 	B_NEW( "client", EHost );
+
+	B_VERIFY( gHost->Init(),
+		return 0 );
 
 	// initialize the renderer.
 	GrInit( "ZOMG!", GAME_SCREEN_WIDTH, GAME_SCREEN_HEIGHT );

@@ -168,6 +168,14 @@
 			>
 		</File>
 		<File
+			RelativePath=".\e_system.cpp"
+			>
+		</File>
+		<File
+			RelativePath=".\e_system.h"
+			>
+		</File>
+		<File
 			RelativePath=".\engine_common.cpp"
 			>
 			<FileConfiguration
@@ -192,6 +200,14 @@
 			>
 		</File>
 		<File
+			RelativePath=".\gr_sceneobj.cpp"
+			>
+		</File>
+		<File
+			RelativePath=".\gr_sceneobj.h"
+			>
+		</File>
+		<File
 			RelativePath=".\i_game.h"
 			>
 		</File>
@@ -209,6 +225,14 @@
 		</File>
 		<File
 			RelativePath=".\i_networkedobject.h"
+			>
+		</File>
+		<File
+			RelativePath=".\Renderer.cpp"
+			>
+		</File>
+		<File
+			RelativePath=".\Renderer.h"
 			>
 		</File>
 	</Files>

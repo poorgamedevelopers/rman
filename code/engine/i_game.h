@@ -16,3 +16,5 @@ public:
 	// accessors.
 	virtual IGameObject*	GetPlayer( uint idx )=0;
 };
+
+typedef IGame*		(*G_CreateGameFn)();

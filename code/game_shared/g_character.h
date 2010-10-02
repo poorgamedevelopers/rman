@@ -5,6 +5,7 @@
 class GCharacter : public IGameObject
 {
 public:
+	virtual void	Update( uint dt );
 
 protected:
 	virtual void	RegisterFields();

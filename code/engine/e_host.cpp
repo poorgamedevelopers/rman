@@ -1,5 +1,6 @@
 #include "engine_common.h"
 #include "e_host.h"
+#include "e_system.h"
 
 // project headers.
 #include "e_hostserver.h"
@@ -9,6 +10,8 @@ EHost*	gHost;
 //------------------------------------------------------------------
 EHost::~EHost()
 {
+	B_DEL( "client", gSystem );
+
 	gHost = 0;
 }
 
@@ -18,6 +21,9 @@ EHost::EHost()
 , _server( 0 )
 {
 	B_ASSERT( !gHost );
+
+	B_NEW( "client", ESystem );
+
 	gHost = this;
 }
 

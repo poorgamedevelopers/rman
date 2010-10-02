@@ -3,6 +3,8 @@
 // project includes.
 #include "Renderer.h"
 
+#define _WIN32_WINNT 0x0500
+
 // windows includes.
 #include <Windows.h>
 
