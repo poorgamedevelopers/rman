@@ -1,0 +1,8 @@
+debug/
+release/
+Debug/
+Release/
+*.suo
+*.ncb
+*.swp
+*.vcproj.*
