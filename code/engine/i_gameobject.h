@@ -1,24 +1,10 @@
+#pragma once
 
-class IGameObject
+#include "i_networkedobject.h"
+
+class IGameObject : public INetworkedObject
 {
 public:
-
-protected:
-	enum EFieldType
-	{
-		FIELD_EXACT
-	};
-
-	void		AddField( EFieldType type, uint bits, const void* data );
-
-private:
-	struct SField
-	{
-		char			prevValue[ 16 ];
-		void*			data;
-		uint			bits;
-		EFieldType		type;
-	};
-
-	vector< SField >	_fields;
-}:
+	~IGameObject();
+	IGameObject();
+};

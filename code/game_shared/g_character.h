@@ -5,4 +5,10 @@
 class GCharacter : public IGameObject
 {
 public:
+
+protected:
+	virtual void	RegisterFields();
+
+private:
+	uint			_test;
 };

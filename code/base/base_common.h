@@ -23,6 +23,8 @@
 // memory utils.
 #define MemSet( p, val, size )				memset( p, val, size )
 #define MemZero( p, size )					memset( p, 0, size )
+#define MemCpy( dst, src, size )			memcpy( dst, src, size )
+#define MemCmp( buf1, buf2, size )			memcmp( buf1, buf2, size )
 
 // memory allocation / freeing.
 #define B_NEW( ctx, type )					new type

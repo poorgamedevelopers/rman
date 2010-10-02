@@ -20,7 +20,7 @@
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="4"
-			CharacterSet="1"
+			CharacterSet="2"
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
@@ -85,7 +85,7 @@
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="4"
-			CharacterSet="1"
+			CharacterSet="2"
 			WholeProgramOptimization="1"
 			>
 			<Tool
@@ -201,6 +201,14 @@
 		</File>
 		<File
 			RelativePath=".\i_gameobject.h"
+			>
+		</File>
+		<File
+			RelativePath=".\i_networkedobject.cpp"
+			>
+		</File>
+		<File
+			RelativePath=".\i_networkedobject.h"
 			>
 		</File>
 	</Files>

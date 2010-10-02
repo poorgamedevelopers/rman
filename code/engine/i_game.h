@@ -1,5 +1,8 @@
 #pragma once
 
+// forward declarations.
+class IGameObject;
+
 class IGame
 {
 public:
@@ -9,6 +12,7 @@ public:
 
 	// events.
 	virtual void	OnLoaded() { }
-};
 
-extern IGame*		G_CreateGame();
+	// accessors.
+	virtual IGameObject*	GetPlayer( uint idx )=0;
+};

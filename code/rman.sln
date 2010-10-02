@@ -20,6 +20,20 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "engine", "engine\engine.vcp
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "base", "base\base.vcproj", "{3CFC3752-D1D1-48AD-9D60-D856FE22D7DE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "game_client", "game_client\game_client.vcproj", "{7BB04BBF-480F-4976-85B0-C5294B1B46E2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{13D00BE5-7F65-440C-9CD7-9E68D903B60A} = {13D00BE5-7F65-440C-9CD7-9E68D903B60A}
+		{06C9DFD3-6216-4F91-BF8E-725E89DED90C} = {06C9DFD3-6216-4F91-BF8E-725E89DED90C}
+		{3CFC3752-D1D1-48AD-9D60-D856FE22D7DE} = {3CFC3752-D1D1-48AD-9D60-D856FE22D7DE}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "game_server", "game_server\game_server.vcproj", "{71545CDE-FE95-4932-8AA7-972A20B992D3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3CFC3752-D1D1-48AD-9D60-D856FE22D7DE} = {3CFC3752-D1D1-48AD-9D60-D856FE22D7DE}
+		{06C9DFD3-6216-4F91-BF8E-725E89DED90C} = {06C9DFD3-6216-4F91-BF8E-725E89DED90C}
+		{13D00BE5-7F65-440C-9CD7-9E68D903B60A} = {13D00BE5-7F65-440C-9CD7-9E68D903B60A}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -42,6 +56,14 @@ Global
 		{3CFC3752-D1D1-48AD-9D60-D856FE22D7DE}.Debug|Win32.Build.0 = Debug|Win32
 		{3CFC3752-D1D1-48AD-9D60-D856FE22D7DE}.Release|Win32.ActiveCfg = Release|Win32
 		{3CFC3752-D1D1-48AD-9D60-D856FE22D7DE}.Release|Win32.Build.0 = Release|Win32
+		{7BB04BBF-480F-4976-85B0-C5294B1B46E2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7BB04BBF-480F-4976-85B0-C5294B1B46E2}.Debug|Win32.Build.0 = Debug|Win32
+		{7BB04BBF-480F-4976-85B0-C5294B1B46E2}.Release|Win32.ActiveCfg = Release|Win32
+		{7BB04BBF-480F-4976-85B0-C5294B1B46E2}.Release|Win32.Build.0 = Release|Win32
+		{71545CDE-FE95-4932-8AA7-972A20B992D3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{71545CDE-FE95-4932-8AA7-972A20B992D3}.Debug|Win32.Build.0 = Debug|Win32
+		{71545CDE-FE95-4932-8AA7-972A20B992D3}.Release|Win32.ActiveCfg = Release|Win32
+		{71545CDE-FE95-4932-8AA7-972A20B992D3}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

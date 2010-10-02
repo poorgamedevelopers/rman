@@ -22,7 +22,13 @@ bool EHostServer::Load()
 	B_VERIFY( !_game,
 		return false );
 
-	_game = G_CreateGame();
+#if E_SERVER
+	_game = SV_CreateGame();
+#elif E_CLIENT
+	_game = CL_CreateGame();
+#else
+#error "bad definitions"
+#endif
 
 	return true;
 }
@@ -32,6 +38,8 @@ bool EHostServer::Update( uint dt )
 {
 	if ( !_game )
 		return true;
+
+	_game->Update( dt );
 
 	return true;
 }
